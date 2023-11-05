@@ -1,0 +1,7 @@
+-hosts: 107.22.104.63
+ become: true
+ tasks:
+  -name: install apache
+   dnf:
+    name: httpd
+    state: present
